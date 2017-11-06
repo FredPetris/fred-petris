@@ -4,4 +4,4 @@
 //= require underscore
 //= require bootstrap-sprockets
 
-//= require_tree ./app
+
