@@ -26,12 +26,21 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'font-awesome-sass'
+gem 'autoprefixer-rails'
+gem 'underscore-rails'
+gem 'bourbon'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'better_errors'
   gem 'byebug', platform: :mri
+  gem 'binding_of_caller', :platforms=>[:mri_21, :rbx]
+  gem 'rails_layout'
 end
 
 group :development do

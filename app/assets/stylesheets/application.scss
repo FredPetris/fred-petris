@@ -1,0 +1,11 @@
+// Graphical variables
+@import "config/variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bourbon";
+
+// Your CSS
+@import "pages/index";
+
