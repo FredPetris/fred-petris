@@ -14,3 +14,15 @@
 .pipe {
   @media (max-width:767px) { display: none; }
 }
+
+@keyframes pulsed {
+  0% {opacity: 0.3;}
+  50% {opacity: 0.8;}
+  100% {opacity: 0.3;}
+}
+
+.pulsed {
+  animation-name: pulsed;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

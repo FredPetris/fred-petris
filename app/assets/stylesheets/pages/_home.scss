@@ -20,6 +20,17 @@
   line-height: 5px;
 }
 
+.message-info {
+  position: relative;
+  top: 35px;
+  font-weight: 500;
+  color: $gray-lighter;
+
+  @media (max-width:767px) {
+    top: 10px;
+  }
+}
+
 .layout-projects {
   position: relative;
   display: flex;
