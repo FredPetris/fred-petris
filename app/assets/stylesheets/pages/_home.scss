@@ -1,16 +1,71 @@
 // SECTION GENERAL
 
-#header {
+.header {
   position: absolute;
+  width: 100%;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  top: 30%;
   color: $dark;
+  font-weight: 100;
+  text-align: center;
 }
 
-.title {
+.name {
   font-size: 30px;
+  font-weight: 200;
 }
 
+.job {
+  line-height: 5px;
+}
+
+.layout-projects {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 20% 10%;
+
+  @media (max-width:767px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 40% 0 20% 0;
+  }
+}
+
+.project-card {
+  position: relative;
+  width: 200px;
+  min-height: 160px;
+  margin: 1%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(25,25,25,0.2);
+  border-radius: 5px 5px 3px 3px;
+  color: #191919;
+  cursor: pointer;
+}
+
+.project-picture img {
+  width: 100%;
+  height: 110px;
+}
+
+.project-title,
+.project-comment {
+  margin-left: 10px;
+  font-weight: 200;
+}
+
+.project-title {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+.project-comment {
+  font-size: 10px;
+}
 
 

@@ -4,4 +4,13 @@
   left: 50%;
   transform: translateX(-50%);
   color: $gray-lighter;
+  font-weight: 100;
+}
+
+.email {
+  color: $gray-lighter;
+}
+
+.pipe {
+  @media (max-width:767px) { display: none; }
 }
