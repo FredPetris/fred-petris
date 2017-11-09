@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  margin-top: 0;
+  z-index: 500;
+  @include transition(all 0.3s ease-in-out);
+
+  @media (max-width: 767px) {
+    .container {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    .nav-left {
+      display: flex;
+    }
+  }
+}
+
+.nav-right {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+

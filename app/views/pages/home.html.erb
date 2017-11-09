@@ -3,61 +3,90 @@
 <% content_for :meta_image %>
 
 <!-- HEADER -->
-<div class="header">
+<section class="section-header" id-"top">
   <!-- HEADER CONTENT -->
-  <h1 class="name">fred pétris</h1>
-  <div class="presentation">
-    <!-- <div>Après plus de 10 ans de développement sur grands systèmes, <br> il y 2 ans, je me suis décidée pour une reconversion dans le digital.</div>
-    <div> Et aujourd'hui, je le suis... -->
-
-    <div class="job">développeuse web</div>
+  <div class="header-content container">
     <div class="message-info pulsed">site en contruction...</div>
+    <h1 class="title-12">introduction</h1>
+    <div class="sub-title-25">
+      Bonjour, je suis Fred Pétris, développeuse web indépendante.
+    </div>
+    <a href="#infos" rel="Go to the infos section" class="button-link uppercase">En savoir plus...</a>
   </div>
-</div>
+</section>
 
 <!-- PORTFOLIO -->
-<div class="layout-projects">
-  <div class="project-card">
-    <div class="project-picture">
-      <%= link_to "http://www.cforgood.com", target: "_blank" do %>
-        <%= image_tag 'site_cforgood.jpg' %>
-      <% end %>
-    </div>
-    <div class="project-title">
-      Site web CforGood
-    </div>
-    <div class="project-comment">
-      développement back + front
+<section class="section-projects" id="projects">
+  <div class="container">
+    <h1 class="title-12">projets</h1>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-picture">
+          <%= link_to "http://www.cforgood.com", target: "_blank" do %>
+            <%= image_tag 'site_cforgood.jpg' %>
+          <% end %>
+        </div>
+        <div class="project-title">
+          Site web CforGood
+        </div>
+        <div class="project-comment">
+          développement back + front
+        </div>
+      </div>
+       <div class="project-card">
+        <div class="project-picture">
+          <%= link_to "http://www.maisonmineralogie.com", target: "_blank" do %>
+            <%= image_tag 'site_mmc.jpg' %>
+          <% end %>
+        </div>
+        <div class="project-title">
+          Site web Maison de la Minéralogie
+        </div>
+        <div class="project-comment">
+          conception & développement back + front
+        </div>
+      </div>
+       <div class="project-card">
+        <div class="project-picture">
+          <%= link_to "http://www.ouibeat.com", target: "_blank" do %>
+            <%= image_tag 'site_ouibeat.jpg' %>
+          <% end %>
+        </div>
+        <div class="project-title">
+          Site web OuiBeat
+        </div>
+        <div class="project-comment">
+          développement back
+        </div>
+      </div>
     </div>
   </div>
-   <div class="project-card">
-    <div class="project-picture">
-      <%= link_to "http://www.maisonmineralogie.com", target: "_blank" do %>
-        <%= image_tag 'site_mmc.jpg' %>
-      <% end %>
-    </div>
-    <div class="project-title">
-      Site web Maison de la Minéralogie
-    </div>
-    <div class="project-comment">
-      conception & développement back + front
-    </div>
-  </div>
-   <div class="project-card">
-    <div class="project-picture">
-      <%= link_to "http://www.ouibeat.com", target: "_blank" do %>
-        <%= image_tag 'site_ouibeat.jpg' %>
-      <% end %>
-    </div>
-    <div class="project-title">
-      Site web OuiBeat
-    </div>
-    <div class="project-comment">
-      développement back
-    </div>
-  </div>
-</div>
+</section>
 
+<section class="section-infos container" id="infos">
+  <h1 class="title-12">informations</h1>
+  <div class="presentation">
+    <div class="sub-title-25">Après plus de 10 ans de développement sur grands systèmes, il y 2 ans, je me suis décidée pour une reconversion dans le digital...
+    </div>
+    <hr>
+    <div class="title-12">parcours</div>
+    <br>
+    <div>
+      Pour des raisons évidentes, on est de plus en plus nombreux à prendre conscience de l'impact de nos modes de vie sur l'état de la planète, notre santé ou encore l'économie de nos villes. Face à ça, on cherche à faire autrement, mais trop souvent, l'urgence du quotidien nous rattrape et on continue à donner raison à un système dans lequel on ne se reconnait plus. Cette prise de conscience est née chez moi il y a déjà quelques temps.
+      <br><br>
+      Mais c’est surtout dans mon travail que je ne me reconnaissais plus. Il y a encore quelques mois, j’étais consultante junior SAP pour une SSII pour un grand compte industriel. Mais cette fonction avait de moins en moins de sens pour moi, il me manquait surtout les relations humaines. Je décide alors de me tourner vers les nouvelles technologie qui allient technicité, créativité et avec une possible application à une échelle plus humaine.
+      <br><br>
+      Et là un enchaînement de circonstances m’amène jusqu’au Wagon, un bootcamp de 9 semaines pour devenir développeur WEB, cette formation, en immersion complète, propose une pédagogie étudiée pour une réelle progression exponentielle. Puis je rencontre lors du salon French Tech, Allan Floury, fondateur de CforGood. Cforgood est une plateforme web et mobile d’économie responsable et solidaire qui permet de connecter les acteurs positifs du territoire entre eux. Cette plateforme permet de localiser les commerces locaux et responsables autour de soi, et bénéficier de réductions chez chacun d’eux, simplement en montrant sa carte de membre. Cette carte est accessible via une participation d’un montant libre dont la moitié est destinée à soutenir l’association locale de son choix.
+      <br><br>
+      CforGood a été une belle expérience de presque 2 ans. Intégrée dans l’équipe qui a démarré cette start up, j’ai développé tout le back office et suis régulièrement intervenue sur l’intégration front.
+      <br><br>
+      Soucieuse d’allier maintenabilité - performance - productivité, j’attache beaucoup d’importance à la qualité et à la structure du code. A ce titre, j’aime factoriser, comprendre et approfondir. J’apprécie également les responsabilités, l’autonomie et les relations collaboratives.
+      <br><br>
+      Convaincue que la forme sans le fond est insuffisant, et inversement, j'aime comprendre le besoin client afin de trouver une solution efficiente.
+    </div>
+    <hr>
+  </div>
+</section>
 
 
 <% content_for :after_js do %>
