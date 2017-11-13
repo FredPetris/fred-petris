@@ -4,6 +4,11 @@
   width: 55%;
   margin-left: 40%;
   margin-top: 50px;
+
+  @media (max-width:767px) {
+    width: 100%;
+    margin-left: auto;
+ }
 }
 
 .job {
@@ -24,59 +29,129 @@
 
 .section-projects {
   width: 100%;
-  color: $dark;
   font-weight: 100;
   text-align: left;
+
+  .title-12 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+    @media (max-width:767px) {
+      padding-left: 0;
+    }
+  }
 }
 
 .projects {
   display: flex;
   justify-content: space-evenly;
+  margin: 0 20px;
 
   @media (max-width:767px) {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 0;
   }
 }
 
 .project-card {
-  width: 300px;
-  min-height: 200px;
-  margin: 1%;
+  width: 33.333%;
+  margin: 0.2%;
+  height: auto;
   background-color: $white-gray;
   color: #191919;
   cursor: pointer;
-}
-
-.project-picture img {
-  width: 100%;
-  height: 150px;
 
   @media (max-width:767px) {
-   height: 170px;
+    width: 100%;
+    margin: 0.5%;
   }
 }
 
-.project-title,
-.project-comment {
+.project-picture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.project-orverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 35px;
+  color: $white;
+  background: rgba(0,0,0,0.3);
+  transition: all .75s;
+
+  &:hover {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+}
+
+.project-label,
+.project-cta {
   margin-left: 10px;
 }
 
 .project-title {
   font-size: 12px;
-  margin-top: 10px;
-  font-weight: 400;
+  margin: 10px;
+  font-weight: 300;
 }
 
-.project-comment {
-  font-size: 10px;
-  font-weight: 200;
+.label-item {
+  font-size: 12px;
+  font-weight: 100;
+  border: 1px;
+  padding: 1px 3px;
+  margin-right: 10px;
+  color: $black;
+  background: $white;
 }
 
-.section-infos {
+.project-cta {
+  margin-top: auto;
+  margin-bottom: 10px;
+
+  a {
+    font-size: 16px;
+    color: $white;
+    outline: none;
+    text-decoration: none;
+  }
+
+  .fa {
+    padding-right: 5px;
+
+    &:hover,
+    &:focus {
+      color: $green-fluo;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.content-infos {
   width: 55%;
   margin-left: 40%;
   font-weight: 300;
+
+  @media (max-width:767px) {
+    width: 100%;
+    margin-left: auto;
+    justify-content: center;
+  }
 }
 

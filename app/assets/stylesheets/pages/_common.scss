@@ -1,10 +1,14 @@
 .email {
   text-decoration: none;
-  outline: 0;
+  outline: none;
 }
 
 .title-12 {
+  padding-top: 10px;
   font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: $gray-light;
   text-transform: uppercase
 }
 
@@ -13,11 +17,21 @@
   font-weight: 200;
 }
 
-a.button-link {
+a {
   border: none;
   background: transparent;
-  color: $dark;
   font-size: 12px;
+  color: $gray-lighter;
+
+  &:hover,
+  &:focus {
+    color: $green-fluo;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+a.button-link {
   font-family: $header-font !important;
   @include transition(background-color 150ms ease-out);
 
@@ -26,12 +40,6 @@ a.button-link {
     align-items: center;
     justify-content: center;
     padding: 5px 20px;
-  }
-
-  &:hover,
-  &:focus {
-    outline: 0;
-    text-decoration: none;
   }
 
   &:not(:disabled) {

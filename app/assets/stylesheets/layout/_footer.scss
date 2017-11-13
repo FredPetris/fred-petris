@@ -1,29 +1,30 @@
 // Your footer style
 
 footer {
-  position: relative;
-  margin: 40px 0 20px 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.social-links {
   color: $gray-lighter;
   font-weight: 100;
 
   ul {
-    display: inline-flex;
+    display: flex;
     list-style-type: none;
-  }
-
-  li {
-    margin: 0 5px;
+    padding: 0;
   }
 
   a {
-    color: $gray-lighter;
-    text-decoration: none;
-    outline: none;
+    font-size: 16px;
+  }
+
+  li {
+    padding-right: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .contact-links-list {
+      flex-direction: column;
+    }
+
+    li {
+      padding-left: 0;
+    }
   }
 }
