@@ -9,9 +9,9 @@
     <div class="message-info pulsed">site en contruction...</div>
     <h1 class="title-12">introduction</h1>
     <div class="sub-title-25">
-      Bonjour, je suis Fred Pétris, développeur web indépendante.
+      Bonjour, je suis <span class="text-bright">Fred Pétris</span>, développeuse web indépendante.
     </div>
-    <a href="#infos" rel="Go to the infos section" class="button-link uppercase">En savoir plus...</a>
+    <a href="#infos" rel="Go to the infos section" class="button-link uppercase">En savoir +</a>
   </div>
 </section>
 
@@ -24,18 +24,19 @@
       <div class="project-card">
         <div class="project-picture">
           <%= image_tag 'site_cforgood.jpg' %>
-          <div class="project-orverlay">
-            <div class="project-title">
+          <div class="project-overlay">
+            <div class="project-name">
               Site web CforGood
             </div>
             <div class="project-label">
-              <span class="label-item">back</span>
-              <span class="label-item">front</span>
+              <span>Développement back & front</span>
             </div>
             <div class="project-cta">
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              <a href="#section-detail" rel="Go to the detail section" class="button-detail cforgood">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </a>
               <%= link_to "http://www.cforgood.com", target: "_blank" do %>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-external-link" aria-hidden="true"></i>
               <% end %>
             </div>
           </div>
@@ -45,18 +46,19 @@
       <div class="project-card">
         <div class="project-picture">
           <%= image_tag 'site_mmc.jpg' %>
-          <div class="project-orverlay">
-            <div class="project-title">
+          <div class="project-overlay">
+            <div class="project-name">
               Site web Maison de la Minéralogie
             </div>
             <div class="project-label">
-              <span class="label-item">back</span>
-              <span class="label-item">front</span>
+              <span>Conception, développement back & front</span>
             </div>
             <div class="project-cta">
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              <a href="#section-detail" rel="Go to the detail section" class="button-detail mmc">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </a>
               <%= link_to "http://www.maisonmineralogie.com", target: "_blank" do %>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-external-link" aria-hidden="true"></i>
               <% end %>
             </div>
           </div>
@@ -66,17 +68,19 @@
       <div class="project-card">
         <div class="project-picture">
           <%= image_tag 'site_ouibeat.jpg' %>
-          <div class="project-orverlay">
-            <div class="project-title">
+          <div class="project-overlay">
+            <div class="project-name">
               Site web OuiBeat
             </div>
             <div class="project-label">
-              <span class="label-item">back</span>
+              <span>Développement back</span>
             </div>
             <div class="project-cta">
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              <a href="#section-detail" rel="Go to the detail section" class="button-detail ouibeat">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </a>
               <%= link_to "http://www.ouibeat.com", target: "_blank" do %>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-external-link" aria-hidden="true"></i>
               <% end %>
             </div>
           </div>
@@ -87,14 +91,128 @@
   </div>
 </section>
 
+<section class="section-detail" id="section-detail">
+
+  <!-- PROJET CFORGOOD -->
+  <div class="project-detail container" id="project-cforgood">
+    <div class="project-title title-12 uppercase">Site web CforGood</div>
+    <div class="project-content">CforGood est une application qui permet de connecter localement citoyens, commerçants et associations.
+      Elle permet à chaque citoyen de bénéficier de réductions chez les commerces locaux et responsables, simplement en montrant sa carte de membre. Cette carte est accessible via un don libre fait à une association.
+      <br><br>Le service est ouvert aux Offices de Tourisme qui offrent la carte de membre pour une durée de 2 semaines aux touristes. Tout en faisant connaître les acteurs locaux et responsables du territoires, ce sont également les associations locales qui bénéficient de l'argent récolter.
+      <br>Les entreprises peuvent également inscrire leurs employés dans le but de favoriser la consommation locale et responsable.
+      <br><br>
+      Cette plateforme permet de gérer :
+      <ul>
+        <li>Un dashboard par type d'utilisateur : citoyen, commerçant, Office du Tourisme, entreprise</li>
+        <li>Tous les bons plans autour de soi grâce à la géolocalisation</li>
+        <li>Les utilisations de bons plans</li>
+        <li>Les données de profil pour l'utilisateur</li>
+        <li>La création en autonomie des bons plans des commerçants</li>
+        <li>Gérer les données bancaires et la mise en place de l'abonnement</li>
+        <li>Gérer les métrics pour le suivi des commerçants, Offices de Tourisme, entreprises</li>
+      </ul>
+      Techniquement ce développement induit :
+      <ul>
+        <li>La gestion d'un database de + de 22 tables</li>
+        <li>L'utilisation de service de géolocalisation, de paimement, de notification...</li>
+        <li>La création de points d'API pour le fonctionnement de l'application mobile développée en natif</li>
+      </ul>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-signin-user.jpg' %>
+      <div class="screen-legend">Connexion d'un citoyen </div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-map.jpg' %>
+      <div class="screen-legend">Dashboard citoyen avec la carte des bons plans</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-bon-plan-index.jpg' %>
+      <div class="screen-legend">Liste des bons plans</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-bon-plan-detail.jpg' %>
+      <div class="screen-legend">Détail d'un bon plan</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-asso.jpg' %>
+      <div class="screen-legend">Liste des associations</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-signin-business.jpg' %>
+      <div class="screen-legend">Connexion d'un commerçant </div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-dashboard-business.jpg' %>
+      <div class="screen-legend">Dashboard commerçant</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-create-perk.jpg' %>
+      <div class="screen-legend">Création d'un bon plan</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-dashboard-ot.jpg' %>
+      <div class="screen-legend">Dashboard Office de Tourisme</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/cforgood-commerces-ot.jpg' %>
+      <div class="screen-legend">Liste des commerces d'un Office de Tourisme</div>
+    </div>
+  </div>
+
+  <!-- PROJET MMC -->
+  <div class="project-detail container" id="project-mmc">
+    <div class="project-title title-12 uppercase">Site web Maison de la Minéralogie de Chalabre</div>
+    <div class="project-content">Cette landing page présente le projet de création d'une Maison de la Minéralogie à Chalabre.
+      <br>Pour cette réalisation, il m'a été confié toute la conception graphique (logo, mise en page, charte grahique...). <br>J'ai également réalisé tout le développement technique. <br><br>Parralèlement, plusieurs travaux de print ont été réalisés.
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/mmc-landing.jpg' %>
+      <div class="screen-legend">Landing page de la Maison de la Minéralogie de Chalabre</div>
+    </div>
+  </div>
+
+  <!-- PROJET OUIBEAT -->
+  <div class="project-detail container" id="project-ouibeat">
+    <div class="project-title title-12 uppercase">Site web OuiBeat</div>
+    <div class="project-content">Création du back-office d'un site multipages. Certaines données sont gérées en dynamique : la listes des logos,  le détail des projets. Pour cela, un admin a été complètement personnalisé afin de faciliter la mise à jour des données.
+      <br><br>Il a fallu également intégrer le script pour l'affichage du Social Wall fourni par OuiBeat.
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/ouibeat-slider-projet.jpg' %>
+      <div class="screen-legend">Slider de présentation des projets avec lien direct vers chaque projet</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/ouibeat-show-projet.jpg' %>
+      <div class="screen-legend">Détail d'un projet</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/ouibeat-admin-projet.jpg' %>
+      <div class="screen-legend">Page admin pour la saisie des données d'un projet</div>
+    </div>
+        <div class="project-screen">
+      <%= image_tag 'projects/ouibeat-logos.jpg' %>
+      <div class="screen-legend">Liste des logos</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/ouibeat-admin-logos.jpg' %>
+      <div class="screen-legend">Page admin pour la saisie des logos</div>
+    </div>
+    <div class="project-screen">
+      <%= image_tag 'projects/ouibeat-social-wall.jpg' %>
+      <div class="screen-legend">Script fourni par OuiBeat pour l'intégration d'un social wall</div>
+    </div>
+  </div>
+
+</section>
+
 <section class="section-infos" id="infos">
   <div class="content-infos container">
     <h1 class="title-12">informations</h1>
     <div class="presentation">
       <div class="sub-title-25">Après plus de 10 ans de développement sur grands systèmes, il y 2 ans, je me suis décidée pour une reconversion dans le digital...
       </div>
-      <hr>
-      <div class="title-12">parcours</div>
+      <div class="title-12 content-parcours">parcours</div>
       <br>
       <div>
         Pour des raisons évidentes, on est de plus en plus nombreux à prendre conscience de l'impact de nos modes de vie sur l'état de la planète, notre santé ou encore l'économie de nos villes. Face à ça, on cherche à faire autrement, mais trop souvent, l'urgence du quotidien nous rattrape et on continue à donner raison à un système dans lequel on ne se reconnait plus. Cette prise de conscience est née chez moi il y a déjà quelques temps.
@@ -118,5 +236,14 @@
 <% content_for :after_js do %>
   <script>
 
+    $(".button-link").click(function(){
+      $('.project-detail').fadeOut();
+    });
+
+    $(".button-detail").click(function(){
+      var projectName = '#project-' + $(this).attr('class').split('button-detail ')[1];
+        $('.project-detail').fadeOut();
+      $(projectName).fadeIn();
+    });
   </script>
 <% end %>
