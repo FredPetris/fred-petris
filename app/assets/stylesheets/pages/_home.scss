@@ -210,6 +210,10 @@
   background: $gray-lighter;
   padding: 0 10px;
 
+  @media (max-width: 768px) {
+    font-weight: 300;
+  }
+
   &:before {
     content: "";
     position: absolute;
